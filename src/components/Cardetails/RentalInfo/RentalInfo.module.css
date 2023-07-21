@@ -1,0 +1,86 @@
+.rental-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% auto;
+  width: 100%;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  color: var(--TextColour__DarkGray);
+  gap: 1em;
+  
+}
+
+.rental-info h3 {
+  font-size: 2em;
+  color: var(--PrimaryColor__DeepBlue);
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.info div h4 {
+  font-size: 1.2em;
+  color: var(--RedColor__CrimsonRed);
+  margin-bottom: 10px;
+}
+
+.info div span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.icon {
+  font-size: 22px;
+  color: var(--ButtonColor__Orange);
+}
+
+.hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.hours span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .rental-info {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .info {
+    flex-direction: row;
+  }
+
+  .hours {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 996px) {}
+
+@media only screen and (min-width: 1200px) {}
+

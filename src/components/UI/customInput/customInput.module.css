@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.container label {
+  font-weight: 600;
+  color: var(--TextColour__DarkGray);
+  opacity: 0.9;
+}
+
+
+.container input {
+  width: 100%;
+  padding: 10px 1.5em;
+  border-radius: 10px;
+  border: 1px solid rgb(216, 216, 216);
+  font-weight: 500;
+  color: var(--TextColour__DarkGray);
+}
+
+.container input::placeholder {
+  color: rgb(117, 117, 117);
+  font-style: italic;
+}
+
+.invalid input {
+  border: 1px solid var(--RedColor__CrimsonRed) ;
+}
+
+.invalid input::placeholder {
+  color: var(--RedColor__CrimsonRed);
+  opacity: 0.75;
+}

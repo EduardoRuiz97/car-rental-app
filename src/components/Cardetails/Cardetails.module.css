@@ -1,0 +1,140 @@
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% auto;
+  width: 100%;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  color: var(--TextColour__DarkGray);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.info h3 {
+  font-size: 2em;
+  color: var(--PrimaryColor__DeepBlue);
+}
+
+.info h4 {
+  font-size: 1.2em;
+  color: var(--RedColor__CrimsonRed);
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1em;
+}
+
+.icon {
+  font-size: 22px;
+  color: var(--ButtonColor__Orange);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: 0.85em;
+  text-transform: capitalize;
+}
+
+.features span {
+  font-weight: 500;
+}
+
+.features ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.features ul li {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  background-color: var(--PrimaryColor__DeepBlue);
+  color: white;
+  font-weight: 700;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  width: 80%;
+  filter: drop-shadow(0 10em 7.5em #efb64c27);
+}
+
+
+@media only screen and (min-width: 600px) {
+  .car {
+    align-items: flex-start;
+  }
+
+  .img-container img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .car {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .info, .img-container {
+    width: 50%;
+  }
+
+  .img-container img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+
+  .info {
+    width: 60%;
+  }
+
+  .img-container {
+    width: 40%;
+  }
+
+  .img-container img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,138 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 3% auto;
+
+}
+
+.price, .total, .extra {
+  width: 100%;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  color: var(--TextColour__DarkGray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.price span {
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
+
+.price span strong {
+  font-size: 1.7em;
+}
+
+.free {
+  color: green;
+  font-weight: 500;
+}
+
+.extra h4 {
+  font-size: 1.25em;
+  margin-bottom: 7px;
+}
+
+.extra p {
+  opacity: 0.8;
+  font-size: 0.9em;
+  margin-bottom: 7px;
+}
+
+.checkbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.input label {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.checkbox span strong {
+  font-size: 1.25em;
+}
+
+
+
+.total h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.total hr {
+  color: var(--TextColour__DarkGray);
+  opacity: 0.3;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.info {
+  width: 100%;
+}
+
+.amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  opacity: 0.8;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.amount span {
+  width: 45%;
+}
+
+.amount span:last-child {
+  text-align: right;
+}
+
+.total-amount {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.total button {
+  width: 100%;
+  background-color: var(--RedColor__CrimsonRed);
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  padding: 0.7em;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s;
+}
+
+.total button:hover {
+  background-color: var(--TextColour__DarkGray);
+}
+
+
+

@@ -1,0 +1,106 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2% auto;
+  width: 100%;
+  border-radius: 15px;
+  padding: 1em 1em 0;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  color: var(--TextColour__DarkGray);
+  gap: 1em;
+  transition: 0.3s;
+}
+
+.open {
+  padding:  1em 1em 1em;
+}
+
+
+.reviews h3 {
+  font-size: 2em;
+  color: var(--PrimaryColor__DeepBlue);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reviews h3:hover {
+  color: var(--TextColour__DarkGray);
+}
+
+.open .container {
+ height: auto; 
+}
+
+.container {
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+}
+
+.reviews ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+  transform: translateY(-110%);
+  transition: 0.5s;
+}
+
+.open ul {
+  transform: translateY(0);
+}
+
+.item {
+  width: 100%;
+}
+
+.item h4 {
+  font-size: 1.3em;
+  color: var(--RedColor__CrimsonRed);
+  text-transform: capitalize;
+}
+
+.item h5 {
+  font-size: 1em;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+
+.item div {
+  width: 100%;
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.item div span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-size: 600;
+}
+
+.item div span:last-child {
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-left: auto;
+}
+
+.icon {
+  font-size: 22px;
+  color: var(--ButtonColor__Orange);
+}
+
+.item p {
+  font-size: 0.95em;
+
+}
