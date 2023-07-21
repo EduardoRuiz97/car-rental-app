@@ -1,0 +1,53 @@
+.button {
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  transition: 0.3s;
+  background-color: var(--ButtonColor__Orange);
+  color: white;
+  transition: 0.3s;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--PrimaryColor__DeepBlue);
+}
+
+.secondary {
+  background-color: white;
+  color: var(--ButtonColor__Orange);
+  border: 1px solid var(--ButtonColor__Orange);
+  transition: 0.3s;
+}
+
+.secondary:hover,
+.secondary:active {
+  color: var(--PrimaryColor__DeepBlue);
+  border: 1px solid var(--PrimaryColor__DeepBlue);
+}
+
+.bluebg {
+  background-color: var(--PrimaryColor__DeepBlue);
+  color: white;
+  transition: 0.3s;
+}
+
+.bluebg:hover,
+.bluebg:active {
+  background-color: white;
+  color: black;
+  opacity: 0.7;
+}
+
+
+.button:disabled {
+  opacity: 0.75;
+  cursor:not-allowed;
+}
+
+@media only screen and (min-width: 996px) {
+  .button {
+    font-size: 0.9em;
+  }
+}

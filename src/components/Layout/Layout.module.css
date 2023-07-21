@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5%;
+  position: relative;
+  background-color: white;
+}
+
+.title {
+  color: var(--PrimaryColor__DeepBlue);
+}
+
+
+.slider {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65vw;
+  height: 100vh;
+  background-color: var(--PrimaryColor__DeepBlue);
+  transform: translate(110%);
+  transition: 0.5s transform ease-in-out;
+  padding: 30% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  z-index: 10;
+}
+
+.slider h1 {
+  color: var(--SecondaryColor__LightGray)
+}
+
+.slider-on {
+  transform: translate(0%);
+}
+
+.menu {
+  color: var(--ButtonColor__Orange);
+  font-size: 2em;
+  transition: 0.3s transform;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    padding: 2em 7%;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .header {
+    padding: 2em 10%;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .header {
+    padding: 2em 12.5%;
+  }
+
+  .slider {
+    position: unset;
+    top: unset;
+    right: unset;
+    width: 60%;
+    height: unset;
+    background-color: unset;
+    transform: unset;
+    transition: unset;
+    padding: unset;
+    display: unset;
+    flex-direction: unset;
+    gap:unset
+  }
+
+  .slider h1 {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+
+}

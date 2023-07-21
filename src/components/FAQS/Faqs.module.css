@@ -1,0 +1,115 @@
+.faqs {
+  width: 95%;
+  margin: 5% auto;
+  padding: 1em;
+  background-color: white;
+  overflow: hidden;
+  height: 70px;
+  transition: 0.3s;
+}
+
+.open {
+  height: auto;
+}
+
+.faqs h3 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: var(--PrimaryColor__DeepBlue);
+  margin-bottom: 1em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.arrow {
+  font-size: 1.5em;
+  transition: 0.3s transform;
+}
+
+.faqs h3:hover,
+.faqs h3:focus {
+  color: var(----TextColour__DarkGray);
+}
+
+.container {
+  width: 100%;
+  padding: 1em;
+  background-color: white;
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+}
+
+.open .container {
+  height: auto; 
+ }
+
+.faqs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+  transform: translateY(-110%);
+  transition: 0.5s;
+}
+
+.open ul {
+  transform: translateY(0);
+}
+
+.open h3 {
+  color: var(----TextColour__DarkGray);
+}
+
+.question {
+  overflow: hidden;
+}
+
+.open .arrow {
+  transform: rotate(180deg);
+}
+
+.question h4 {
+  color: var(----TextColour__DarkGray);
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  opacity: 0.75;
+}
+
+.question div {
+  font-size: 0.95em;
+  color: var(----TextColour__DarkGray);
+  opacity: 0.75;
+}
+
+@media only screen and (min-width: 600px) {
+  .faqs {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .faqs {
+    width: 80%;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .faqs {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .faqs {
+    width: 65%;
+  }
+}

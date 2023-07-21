@@ -1,0 +1,104 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.formbtn {
+  width: 100%;
+  background-color: var(--TextColour__DarkGray);
+  padding: 0.7em;
+  color: white;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1em;
+  transition: 0.3s;
+  border: nonen;
+}
+
+.formbtn:hover {
+  opacity: 0.7;
+}
+
+
+.field {
+  border: 1px solid #d2d2d2;
+  padding: 5px 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  border-radius: 10px;
+  background-color: white;
+  width: auto;
+  color: var(--TextColour__DarkGray);
+}
+
+.large {
+  width: 100%;
+}
+
+.medium {
+  width: 60%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  width: 80%;
+}
+
+.input-container input, .input-container select {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.input-container select {
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .medium {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .large{
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .medium{
+    width: 23%;
+  }
+
+  .formbtn {
+    width: 40%;
+    margin-left: auto;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 2em;
+  }
+
+  .formbtn {
+    width: 23%;
+  }
+}

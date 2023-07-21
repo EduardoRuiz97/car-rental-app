@@ -1,95 +1,124 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import Link from 'next/link';
+import classes from '../styles/Home.module.css';
+import Button from '@/components/UI/Button/Button';
+import HomeCarList from '@/components/HomeCarList/HomeCarList';
+import NewsletterForm from '@/components/UI/Newsletter/Newsletter';
+import Comments from '@/components/comments/comments';
+import HomeListR from '@/components/HomeListR/HomeListR';
 
-export default function Home() {
+export default async function Home() {
+
+  const data = await getData();
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
+    <main>
+
+      <section className={classes.intro}>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <Image 
+          src='/images/home-car3.png' 
+          alt='intro car image' 
+          className={classes.img}
+          width={600}
+          height={300}
+          />
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className={classes.text}>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          <h1>
+            <strong>Easy</strong> and fast way to rent a car
+          </h1>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Experience convenience, competitive prices, and exceptional service for your road trips, business visits, or temporary transportation needs. Rent with DriveWell Car Rentals and enjoy a seamless car rental experience.
           </p>
-        </a>
-      </div>
+
+          <div className={classes.actions}>
+
+            <Link href={'/rentals'}>
+              <Button>Get started</Button>
+            </Link>
+            <Button className={classes.secondary}>Learn more</Button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+
+        <div className={classes.title}>
+          <h1><strong>Latest</strong> Inventory</h1>
+        </div>
+
+        <HomeCarList cars={data}/>
+
+      </section>
+
+
+      <section className={classes.section}>
+
+        <div className={classes.title}>
+          <h1>Why <strong>Choose us</strong></h1>
+          <p>Choose DriveWell Car Rentals for a seamless experience from start to finish. With our extensive vehicle selection and exceptional customer service, we ensure a reliable and convenient car rental solution tailored to your needs.</p>
+        </div>
+
+        <div className={classes.container}>
+            <Image 
+            width={1000}
+            height={400}
+            src='/images/whychooseus-img5.png'
+            alt='why choose us image'
+            className={classes.secimg}
+            />
+
+            <HomeListR />
+        </div>
+
+      </section>
+
+
+      <section>
+        <div className={classes.newsletter}>
+          <NewsletterForm />
+          <Image 
+          width={800}
+          height={500}
+          src='/images/formsection.png'
+          alt='join to the newsletter img'
+          className={classes.newsletImg}
+          />
+        </div>
+      </section>
+
+
+      <section className={classes.reviews}>
+        <h1>What <strong>Our clients</strong> say</h1>
+        <p className={classes.parag}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius mattis massa, id luctus magna vehicula et. Fusce arcu diam.</p>
+        <Comments />
+      </section>
+
+
     </main>
   )
 }
+
+
+async function getData() {
+
+  const res = await fetch('https://car-rental-7e85a-default-rtdb.firebaseio.com/cars.json', { next: { revalidate:  3600 } })
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+ 
+  // Recommendation: handle errors
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+  }
+
+
+ 
+  return res.json();
+}
+

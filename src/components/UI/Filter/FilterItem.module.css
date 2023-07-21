@@ -1,0 +1,85 @@
+.item {
+  position: relative;
+  color: var(----TextColour__DarkGray);
+}
+
+.item span {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+.options {
+  position: absolute;
+  left: 0;
+  top: 120%;
+  width: 125%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5em;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  font-size: 0.8em;
+  z-index: 100000;
+  padding: 1em;
+  transform: scale(0);
+}
+
+.open {
+  transform: scale(1);
+}
+
+.options li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.options li input, .options li label {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 15px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .item {
+    width: 100%;
+  }
+
+  .item span {
+    box-shadow: unset;
+    width: 100%;
+  }
+  
+  .options {
+    position: unset;
+    border-radius: unset;
+    background-color: unset;
+    box-shadow: unset;
+    width: 100%;
+    transform: scale(1);
+  }
+
+  .icon {
+    transform: scale(0);
+  }
+}

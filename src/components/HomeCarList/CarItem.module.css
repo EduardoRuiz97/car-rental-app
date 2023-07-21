@@ -1,0 +1,142 @@
+.car {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  width: 310px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.content img {
+  width: 80%;
+  margin: auto;
+  height: 160px;
+}
+
+.content h3 {
+  text-transform: uppercase;
+  color: var(--PrimaryColor__DeepBlue);
+  margin-bottom: 0.5em;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.features span {
+  width: 32%;
+  height: 40px;
+  font-size: 0.75em;
+  color: var(--TextColour__DarkGray);
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.1);
+}
+
+.content button {
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.availability {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(51, 51, 51, 0.95);
+  position: absolute;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+  top: 100%;
+  left: 0%;
+  transition: 0.3s;
+}
+
+.open {
+  top: 0%;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.title .icon {
+  cursor: pointer;
+  font-size: 1.25em;
+}
+
+.availability ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5em;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 0.9em;
+}
+
+.availability button {
+  width: 100%;
+  font-weight: 700;
+}
+
+.availability div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 0.8em;
+  gap: 5px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .car {
+    width: 350px;
+  }
+
+  .content img {
+    height: 170px;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1600px) {
+  .car {
+    width: 380px;
+  }
+
+  .content img {
+    height: 210px;
+  }
+}

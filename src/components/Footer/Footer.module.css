@@ -1,0 +1,180 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.options {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--PrimaryColor__DeepBlue);
+  color: white;
+}
+
+.options h1 {
+  font-size: 2.3em;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.list li {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.list li span {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.list li span:hover {
+  text-decoration: underline;
+}
+
+.second-list {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.second-list li {
+  opacity: 0.75;
+}
+
+.second-list li:hover {
+  opacity: 1;
+}
+
+.media {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: var(--ButtonColor__Orange);
+  background-color: rgb(253, 253, 253);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: var(--RedColor__CrimsonRed);
+}
+
+.media span {
+  color: var(--TextColour__DarkGray);
+  font-size: 0.8em;
+  opacity: 0.8;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .options {
+    padding: 2em;
+  }
+
+  .list {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+
+  .options {
+    padding: 3em;
+  }
+
+  .media {
+    padding: 2em 1em;
+  }
+
+}
+
+@media only screen and (min-width: 996px) {
+  .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4em;
+  }
+
+  .options h1 {
+    margin-bottom: unset;
+    font-size: 2.5em;
+  }
+
+  .list {
+    width: 70%;
+    gap: 1em;
+  }
+
+  .second-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .media {
+    padding: 1em 4em;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4em;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .options {
+    padding: 5em 12.5%;
+  }
+
+  .media {
+    padding: 2em 12.5%;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .options {
+    padding: 7em 17.5%;
+  }
+
+  .media {
+    padding: 2em 17.5%;
+  }
+
+
+}

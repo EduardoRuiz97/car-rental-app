@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+@media only screen and (min-width: 777px) {
+
+  .list {
+    display: grid;
+    grid-template-columns: 48% 48%;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .list {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+  }
+}

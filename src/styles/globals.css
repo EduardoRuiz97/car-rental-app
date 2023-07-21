@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --PrimaryColor__DeepBlue:#004080;
+  --SecondaryColor__LightGray: #F5F5F5;
+  --AccentColour__LimeGreen: #00FF00;
+  --BackgroundColour__LightGray: #f8f8f8;
+  --TextColour__DarkGray: rgb(51, 51, 51);
+  --ButtonColor__Orange: #FFA500;
+  --RedColor__CrimsonRed: #DC143C;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--BackgroundColour__LightGray);
+  font-size: 16px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+button, a, img {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.3em
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  margin: 5% 0;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    width: 86%;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  main {
+    width: 75%;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}

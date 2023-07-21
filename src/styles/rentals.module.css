@@ -1,0 +1,109 @@
+.main {
+  width: 100%;
+}
+
+.rentalForm {
+  padding: 5% 2.5%;
+  margin: unset;
+}
+
+.iconContainer {
+  background-color: white;
+  padding: 2.5%;
+}
+
+.iconContainer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.iconItem div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-align: center;
+}
+
+.iconContainer div .icon {
+  font-size: 2.5em;
+  color: var(--ButtonColor__Orange);
+}
+
+.iconContainer div span {
+  color: var(----TextColour__DarkGray);
+  font-size: 0.95em;
+  opacity: 0.75;
+  font-weight: 500;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+  .rentalForm {
+    padding: 5%;
+  }
+
+
+}
+
+@media only screen and (min-width: 777px) {
+  .rentalForm {
+    padding: 5% 10%;
+  }
+
+  .iconContainer {
+    padding: 5% 10%;
+  }
+
+  .iconContainer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+@media only screen and (min-width: 996px) {
+  .rentalForm {
+    padding: 5% 12.5%;
+    background-image: url('../../public/images/rentalsRoad.jpg');
+    background-size: cover;
+    background-position-y: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .rentalForm {
+    padding: 5% 15%;
+    background-position-y: 40%;
+  }
+
+  .iconContainer {
+    padding: 2.5% 15%;
+  }
+
+  .iconContainer div .icon {
+    font-size: 4em;
+  }
+
+  .iconContainer div .span {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .rentalForm {
+    padding: 5% 15%;
+    background-position-y: 50%;
+  }
+
+  .iconContainer {
+    padding: 5% 20%;
+  }
+}

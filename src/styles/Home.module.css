@@ -1,0 +1,269 @@
+
+/*----------Text section ----------*/
+
+.text {
+  text-align: center;
+}
+
+.text h1 {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+  color: var(--PrimaryColor__DeepBlue);
+  text-transform: uppercase;
+}
+
+.text h1 strong {
+  color: var(--ButtonColor__Orange);
+}
+
+.text p {
+  color: var(--TextColour__DarkGray);
+  margin-bottom: 2em;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.secondary {
+  background-color: white;
+  color: var(--ButtonColor__Orange);
+  border: 1px solid var(--ButtonColor__Orange);
+  transition: 0.3s;
+}
+
+.secondary:hover,
+.secondary:active {
+  color: var(--PrimaryColor__DeepBlue);
+  border: 1px solid var(--PrimaryColor__DeepBlue);
+}
+
+.text div button {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+.img {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  filter: drop-shadow(0 0 7.5em #ffa60027);
+}
+
+@media only screen and (min-width: 600px) {
+  .text {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .intro div {
+    width: 48%;
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .text p {
+    width: 80%;
+  }
+
+  .actions {
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+}
+
+
+
+/*---------------------------------------------------*/
+
+/*------------------list section----------------------*/
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  gap: 10px;
+}
+
+.title h1 {
+  color: var(--PrimaryColor__DeepBlue);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title h1 strong {
+  color: var(--ButtonColor__Orange);
+}
+
+.title span {
+  align-self: flex-end;
+  cursor: pointer;
+  color: var(--TextColour__DarkGray);
+  font-weight: 600;
+  color: var(--RedColor__CrimsonRed);
+}
+
+.title span:hover {
+  text-decoration: underline;
+}
+
+
+
+/*---------------------------------------------------*/
+
+/*------------------why choose us section----------------------*/
+
+.section {
+  position: relative;
+}
+
+.title p {
+  text-align: center;
+  color: var(--TextColour__DarkGray);
+  margin-bottom: 2em;
+}
+
+.secimg {
+  display: none;
+}
+
+@media only screen and (min-width: 996px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .secimg{
+    display: block;
+    width:900px;
+    height: auto;
+    position: absolute;
+    left: -75%;
+    top: 0;
+    z-index: 1;
+    filter: drop-shadow(0 0 7.5em #ffa60027);
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .secimg {
+    left: -65%;
+  }
+
+  .title p {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .secimg {
+    left: -55%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .secimg {
+    left: -50%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .secimg {
+    left: -30%;
+  }
+}
+
+/*-------------------------------------------------------------*/
+
+/*---------------------Form Newletter--------------------------*/
+
+.newsletter {
+  border-radius: 10px;
+  background-color: white;
+  padding: 1em;
+  box-shadow:1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletImg {
+  display: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .newsletter {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  /* .newsletter {
+    width: 80%;
+  } */
+}
+
+@media only screen and (min-width: 996px) {
+  .newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .newsletImg {
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .newsletter {
+    width: 80%;
+  }
+}
+/*-------------------------------------------------------------*/
+
+/*---------------------Reviews section-------------------------*/
+
+
+.reviews h1 {
+  color: var(--PrimaryColor__DeepBlue);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.reviews h1 strong {
+  color: var(--ButtonColor__Orange);
+}
+
+.parag {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/*-------------------------------------------------------------*/
+
+
