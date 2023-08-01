@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   text-align: center;
 }
 
@@ -46,6 +47,11 @@
   border: 1px solid var(--PrimaryColor__DeepBlue);
 }
 
+.form button {
+  width: 30%;
+  font-weight: 700;
+}
+
 @media only screen and (min-width: 996px) {
   .container {
     text-align: left;
@@ -62,6 +68,7 @@
   .form input {
     width: 70%;
   }
+
 }
 
 @media only screen and (min-width: 1200px) {

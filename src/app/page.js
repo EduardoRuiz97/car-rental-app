@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import classes from '../styles/Home.module.css';
 import Button from '@/components/UI/Button/Button';
-import HomeCarList from '@/components/HomeCarList/HomeCarList';
 import NewsletterForm from '@/components/UI/Newsletter/Newsletter';
 import Comments from '@/components/comments/comments';
 import HomeListR from '@/components/HomeListR/HomeListR';
+import CartTable from '@/components/CarTable/CarTable';
 
 export default async function Home() {
 
@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <main>
 
-      <section className={classes.intro}>
+      <section className={`${classes.intro} ${classes.section}`}>
         <div>
           <Image 
           src='/images/home-car3.png' 
@@ -38,7 +38,7 @@ export default async function Home() {
           <div className={classes.actions}>
 
             <Link href={'/rentals'}>
-              <Button>Get started</Button>
+              <Button>Book a car now</Button>
             </Link>
             <Button className={classes.secondary}>Learn more</Button>
 
@@ -47,18 +47,18 @@ export default async function Home() {
         </div>
       </section>
 
-      <section>
+      <section className={`${classes['car-info']} ${classes.section}`}>
 
         <div className={classes.title}>
-          <h1><strong>Latest</strong> Inventory</h1>
+          <span>Vehicle models available</span>
+          <h1>Our rental fleet</h1>
+          <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business tripp</p>
         </div>
-
-        <HomeCarList cars={data}/>
-
+        <CartTable cars={data}/>
       </section>
 
 
-      <section className={classes.section}>
+      <section className={`${classes['why-us']} ${classes.section}`}>
 
         <div className={classes.title}>
           <h1>Why <strong>Choose us</strong></h1>
@@ -80,8 +80,8 @@ export default async function Home() {
       </section>
 
 
-      <section>
-        <div className={classes.newsletter}>
+      <section className={classes.newsletter}>
+        <div className={classes.content}>
           <NewsletterForm />
           <Image 
           width={800}
@@ -94,7 +94,7 @@ export default async function Home() {
       </section>
 
 
-      <section className={classes.reviews}>
+      <section className={`${classes.reviews} ${classes.section}`}>
         <h1>What <strong>Our clients</strong> say</h1>
         <p className={classes.parag}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius mattis massa, id luctus magna vehicula et. Fusce arcu diam.</p>
         <Comments />

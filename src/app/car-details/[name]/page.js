@@ -2,7 +2,8 @@ import Cardetails from "@/components/Cardetails/Cardetails";
 import RentalInfo from "@/components/Cardetails/RentalInfo/RentalInfo";
 import Reviews from "@/components/Cardetails/Reviews/Reviews";
 import Checkout from "@/components/UI/Chekout/Checkout";
-import classes from '../../../styles/carDetails.module.css'
+import classes from '../../../styles/carDetails.module.css';
+import Policies from "@/components/Cardetails/policies/Policies";
 
 const CartDetailsPage = async ({params}) => {
 
@@ -22,6 +23,8 @@ const CartDetailsPage = async ({params}) => {
         <div className={classes.mobile}>
           <Checkout car={data}/>
         </div>
+
+        <Policies />
 
         <Reviews reviews={data.reviews}/>
 

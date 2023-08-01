@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  color: var(--TextColour__DarkGray);
+}
+
+.content span {
+  font-weight: 700;
+  font-size: 1.25em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.content small {
+  color: var(--RedColor__CrimsonRed);
+  font-style: italic;
+}
+
+.close {
+  font-size: 0;
+}
+
+.open {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+}

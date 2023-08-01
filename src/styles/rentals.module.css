@@ -1,5 +1,6 @@
 .main {
   width: 100%;
+  background-color: white;
 }
 
 .rentalForm {
@@ -7,9 +8,80 @@
   margin: unset;
 }
 
+/*-----------top destination ------------------*/
+
+.destination {
+  width: 95%;
+  margin: 5% auto 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  color: var(--RedColor__CrimsonRed);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.title h2 {
+  color: var(--PrimaryColor__DeepBlue);
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+.item span {
+  color: var(----TextColour__DarkGray);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+
+/*-----------icon container ----------------*/
+
 .iconContainer {
-  background-color: white;
   padding: 2.5%;
+  width: 95%;
+  margin: 2% auto;
+}
+
+.iconContainer h2 {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  color: var(--PrimaryColor__DeepBlue);
 }
 
 .iconContainer ul {
@@ -42,11 +114,22 @@
 }
 
 
+/*---------------media queries -------------------*/
+
+
 
 
 @media only screen and (min-width: 600px) {
   .rentalForm {
     padding: 5%;
+  }
+
+  .iconContainer {
+    width: 90%;
+  }
+
+  .destination {
+    width: 90%;
   }
 
 
@@ -58,6 +141,7 @@
   }
 
   .iconContainer {
+    width: 85%;
     padding: 5% 10%;
   }
 
@@ -67,6 +151,18 @@
     justify-content: space-between;
   }
 
+  .destination {
+    width: 85% ;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+    row-gap: 2%;
+  }
+
+  
 }
 
 @media only screen and (min-width: 996px) {
@@ -76,16 +172,43 @@
     background-size: cover;
     background-position-y: 50%;
   }
+
+  .iconContainer {
+    width: 80%;
+  }
+
+  .iconContainer h2 {
+    font-size: 2em;
+  }
+
+  .destination {
+    width: 80%;
+    gap: 2em;
+  }
+
+  .title h2 {
+    font-size: 3em;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 1%;
+  }
+
+
 }
 
 @media only screen and (min-width: 1200px) {
   .rentalForm {
-    padding: 5% 15%;
+    padding: 7% 15%;
     background-position-y: 40%;
+    height: 75vh;
   }
 
   .iconContainer {
-    padding: 2.5% 15%;
+    width: 75%;
+    padding: 2% 15%;
   }
 
   .iconContainer div .icon {
@@ -95,15 +218,21 @@
   .iconContainer div .span {
     font-size: 1.2em;
   }
+
+
 }
 
 @media only screen and (min-width: 1400px) {
   .rentalForm {
-    padding: 5% 15%;
+    padding: 7% 10%;
     background-position-y: 50%;
   }
 
   .iconContainer {
-    padding: 5% 20%;
+    padding: 3% 10%;
+  }
+
+  .list {
+    width: 75%;
   }
 }

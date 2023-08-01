@@ -5,10 +5,9 @@
   align-items: center;
   margin: 2% auto;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 1em;
   background-color: white;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
   color: var(--TextColour__DarkGray);
 }
 
@@ -22,7 +21,7 @@
 
 .info h3 {
   font-size: 2em;
-  color: var(--PrimaryColor__DeepBlue);
+  color: var(--TextColour__DarkGray);
 }
 
 .info h4 {

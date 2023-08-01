@@ -45,20 +45,19 @@ const Faqs = () => {
 
   
   return (
-    <section className={isOpenFaqs ? `${classes.open} ${classes.faqs}` : classes.faqs}>
-      <h3 onClick={openFaqsHandler}>What you need to know about renting a car <BiCaretDown className={classes.arrow}/></h3>
+    <section className={classes.faqs}>
+      <h3 onClick={openFaqsHandler}>What you need to know about renting a car</h3>
 
-      <div className={classes.container}>
-        <ul>
-          {FAQS.map((faq, index) => <li key={index} className={classes.question}>
-            <h4>{faq.question}</h4>
-            <div>
-              <p>{faq.answer}</p>
-            </div>
-          </li> 
-          )}
-        </ul>
-      </div>
+      <ul>
+        {FAQS.map((faq, index) => <li key={index} className={classes.question}>
+          <h4>{faq.question}</h4>
+          <div>
+            <p>{faq.answer}</p>
+          </div>
+        </li> 
+        )}
+      </ul>
+
     </ section>
   )
 };

@@ -1,4 +1,4 @@
-.faqs {
+/* .faqs {
   width: 95%;
   margin: 5% auto;
   padding: 1em;
@@ -111,5 +111,82 @@
 @media only screen and (min-width: 1400px) {
   .faqs {
     width: 65%;
+  }
+} */
+
+
+.faqs {
+  width: 95%;
+  margin: 2% auto 5%;
+  padding: 1em;
+  background-color: white;
+}
+
+.faqs h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: var(--PrimaryColor__DeepBlue);
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.faqs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.question h4 {
+  color: var(----TextColour__DarkGray);
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.question div {
+  font-size: 0.95em;
+  color: var(----TextColour__DarkGray);
+  opacity: 0.75;
+}
+
+@media only screen and (min-width: 600px) {
+  .faqs {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .faqs {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .faqs ul {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    row-gap: 10%;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .faqs {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .faqs {
+    width: 65%;
+  }
+
+  .faqs ul {
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 1%;
   }
 }

@@ -1,3 +1,24 @@
+.section {
+  width: 95%;
+}
+
+@media only screen and (min-width: 600px) {
+  .section {
+    width: 86%;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .section {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .section {
+    width: 75%;
+  }
+}
 
 /*----------Text section ----------*/
 
@@ -92,7 +113,11 @@
 
 /*---------------------------------------------------*/
 
-/*------------------list section----------------------*/
+/*------------------car info section----------------------*/
+
+.car-info {
+  padding: 2em;
+}
 
 .title {
   display: flex;
@@ -100,7 +125,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
-  gap: 10px;
+  gap: 5px;
 }
 
 .title h1 {
@@ -109,20 +134,15 @@
   text-align: center;
 }
 
-.title h1 strong {
-  color: var(--ButtonColor__Orange);
-}
-
 .title span {
-  align-self: flex-end;
   cursor: pointer;
   color: var(--TextColour__DarkGray);
   font-weight: 600;
   color: var(--RedColor__CrimsonRed);
 }
 
-.title span:hover {
-  text-decoration: underline;
+.title p {
+  color: var(--TextColour__DarkGray);
 }
 
 
@@ -131,7 +151,7 @@
 
 /*------------------why choose us section----------------------*/
 
-.section {
+.why-us {
   position: relative;
 }
 
@@ -199,10 +219,9 @@
 /*---------------------Form Newletter--------------------------*/
 
 .newsletter {
-  border-radius: 10px;
+  width: 100%;
   background-color: white;
   padding: 1em;
-  box-shadow:1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .newsletImg {
@@ -212,19 +231,23 @@
 
 @media only screen and (min-width: 600px) {
   .newsletter {
-    width: 90%;
-    margin: auto;
+    padding: 2em 3em;
   }
 }
 
 @media only screen and (min-width: 777px) {
-  /* .newsletter {
-    width: 80%;
-  } */
+  .newsletter {
+    padding: 2em 10%;
+  }
 }
 
 @media only screen and (min-width: 996px) {
+
   .newsletter {
+    padding: 5% 15%;
+  }
+
+  .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -239,9 +262,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .newsletter {
-    width: 80%;
-  }
+
 }
 /*-------------------------------------------------------------*/
 

@@ -62,7 +62,7 @@ p {
 }
 
 main {
-  width: 95%;
+  /* width: 95%; */
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -70,10 +70,10 @@ main {
 }
 
 section {
-  margin: 5% 0;
+  margin: 5% auto;
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   main {
     width: 86%;
   }
@@ -89,7 +89,7 @@ section {
   main {
     width: 75%;
   }
-}
+} */
 
 
 @media only screen and (min-width: 1200px) {

@@ -31,7 +31,7 @@ const Checkout = (props) => {
       setTotalAmountToPay(totalAmountToPay + 9);
       setIsExtraOn(true)
     } else {
-      setTotalAmountToPay(totalAmountToPay);
+      setTotalAmountToPay(totalAmountToPay - 9);
       setIsExtraOn(false);
     }
   }

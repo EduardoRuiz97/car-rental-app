@@ -5,39 +5,28 @@
   align-items: flex-start;
   margin: 2% auto;
   width: 100%;
-  border-radius: 15px;
-  padding: 1em 1em 0;
+  border-radius: 5px;
+  padding: 1em;
   background-color: white;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
   color: var(--TextColour__DarkGray);
   gap: 1em;
   transition: 0.3s;
 }
 
-.open {
-  padding:  1em 1em 1em;
-}
-
-
 .reviews h3 {
   font-size: 2em;
-  color: var(--PrimaryColor__DeepBlue);
+  color: var(--TextColour__DarkGray);
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 
 .reviews h3:hover {
   color: var(--TextColour__DarkGray);
 }
 
-.open .container {
- height: auto; 
-}
-
 .container {
   overflow: hidden;
-  height: 0;
-  transition: 0.5s;
 }
 
 .reviews ul {
@@ -46,12 +35,6 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 1em;
-  transform: translateY(-110%);
-  transition: 0.5s;
-}
-
-.open ul {
-  transform: translateY(0);
 }
 
 .item {
@@ -62,12 +45,16 @@
   font-size: 1.3em;
   color: var(--RedColor__CrimsonRed);
   text-transform: capitalize;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-style: italic;
 }
 
 .item h5 {
   font-size: 1em;
   text-transform: capitalize;
   margin-bottom: 7px;
+  font-weight: 500;
 }
 
 .item div {
@@ -87,12 +74,14 @@
   align-items: center;
   gap: 5px;
   font-size: 600;
+  font-weight: 700;
 }
 
 .item div span:last-child {
   font-weight: 500;
   font-size: 0.9em;
   margin-left: auto;
+  font-style: italic;
 }
 
 .icon {
@@ -101,6 +90,8 @@
 }
 
 .item p {
+  width: 70%;
   font-size: 0.95em;
+  color: var(--TextColour__DarkGray);
 
 }

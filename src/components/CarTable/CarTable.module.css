@@ -1,0 +1,129 @@
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options span {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ButtonColor__Orange);
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--ButtonColor__Orange) ;
+  margin-bottom: 1em;
+}
+
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 10px;
+}
+
+.list li {
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.list li:hover {
+  color: var(--RedColor__CrimsonRed);
+}
+
+.car-info {
+  width: 100%;
+}
+
+
+/* .options {
+  width: 25%;
+  max-height: 400px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.list li {
+  width: 100%;
+  padding: 0.7em 1em;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.list li:hover {
+  color: white;
+  background-color: var(--RedColor__CrimsonRed);
+}
+
+.list li:active {
+  background-color: var(--RedColor__CrimsonRed);
+}
+
+.car-info {
+  width: 73%;
+} */
+
+
+@media only screen and (min-width: 777px) {
+
+  .list {
+    grid-template-columns: 24% 24% 24% 24%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    height: 410px;
+  }
+
+  .options {
+  width: 25%;
+  max-height: 400px;
+  }
+
+  .options span {
+    display: none;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list li {
+    width: 100%;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+
+  .list li:hover {
+    color: white;
+    background-color: var(--RedColor__CrimsonRed);
+  }
+
+}

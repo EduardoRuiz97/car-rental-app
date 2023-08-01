@@ -12,7 +12,7 @@ const Reviews = (props) => {
 
 
   return (
-    <article className={isRevOpen ? `${classes.reviews} ${classes.open}` : classes.reviews}>
+    <article className={classes.reviews}>
 
       <h3 onClick={openreviewsHandler}>What our custommers has to say?</h3>
 

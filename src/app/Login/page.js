@@ -23,12 +23,11 @@ export default function Login () {
     
     if (proceed) {
 
-      router.refresh();
-
+      
       if (typeof window !== 'undefined') {
         localStorage.setItem("isLoggedIn", "1");
       }
-
+      
       router.back();
     }
   }

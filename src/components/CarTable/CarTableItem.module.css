@@ -1,0 +1,148 @@
+/* .car {
+  display: grid;
+  grid-template-columns: 60% 38%;
+  column-gap: 2%;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  height: 300px;
+  filter: drop-shadow(0 0 7.5em #ffa60027);
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.info span {
+  width: 100%;
+  background-color: var(--RedColor__CrimsonRed);
+  padding: 1em;
+  color: white;
+  font-weight: 600;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1em;
+}
+
+.table tr {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  color: var(--TextColour__DarkGray);
+  font-size: 0.9em;
+}
+
+.table tr td:first-child {
+  border-right: 1px solid rgb(194, 194, 194);
+  font-weight: 600;
+}
+
+.info button {
+  font-weight: 600;
+} */
+
+
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image img {
+  max-height: 150px;
+  margin: auto;
+  filter: drop-shadow(0 0 7.5em #ffa60027);
+}
+
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.info span {
+  width: 100%;
+  background-color: var(--RedColor__CrimsonRed);
+  padding: 1em;
+  color: white;
+  font-weight: 600;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1em;
+}
+
+.table tr {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  color: var(--TextColour__DarkGray);
+  font-size: 0.9em;
+}
+
+.table tr td:first-child {
+  border-right: 1px solid rgb(194, 194, 194);
+  font-weight: 600;
+}
+
+.info button {
+  font-weight: 600;
+}
+
+
+@media only screen and (min-width: 777px) {
+
+  .image img {
+    height: 250px;
+    max-height: unset;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .car {
+    display: grid;
+    grid-template-columns: 60% 38%;
+    column-gap: 2%;
+  }
+
+  .image img {
+    height: 300px;
+  }
+
+}
