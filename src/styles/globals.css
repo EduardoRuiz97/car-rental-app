@@ -73,24 +73,6 @@ section {
   margin: 5% auto;
 }
 
-/* @media only screen and (min-width: 600px) {
-  main {
-    width: 86%;
-  }
-}
-
-@media only screen and (min-width: 777px) {
-  main {
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 996px) {
-  main {
-    width: 75%;
-  }
-} */
-
 
 @media only screen and (min-width: 1200px) {
   h1 {

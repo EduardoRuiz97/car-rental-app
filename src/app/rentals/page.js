@@ -6,6 +6,13 @@ import { MdPhoneIphone } from "react-icons/md";
 import classes from '../../styles/rentals.module.css';
 
 
+export const metadata = {
+  title: 'Cars rentals',
+  description: 'This page shows the form for the search of the perfect car for you',
+}
+
+
+
 let destination = [
   {
     image: 'https://images.unsplash.com/photo-1507992781348-310259076fe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',

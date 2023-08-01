@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 
 const CarsAvailablePage = async () => {
 
-
   const searchParams = useSearchParams()
 
   const params = {
@@ -54,4 +53,6 @@ export async function getData(location) {
     return res.json();
    }
 
-}
+};
+
+

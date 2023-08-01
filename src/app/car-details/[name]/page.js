@@ -5,6 +5,12 @@ import Checkout from "@/components/UI/Chekout/Checkout";
 import classes from '../../../styles/carDetails.module.css';
 import Policies from "@/components/Cardetails/policies/Policies";
 
+export const metadata = {
+  title: 'Car details',
+  description: 'This page shows the details of the selected car',
+}
+
+
 const CartDetailsPage = async ({params}) => {
 
   const {name} = params;
